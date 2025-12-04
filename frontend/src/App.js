@@ -4,7 +4,7 @@ function App() {
   const [quote, setQuote] = useState("Click button for Quote of the Day!");
 
   const fetchQuote = async () => {
-    const response = await fetch("http://localhost:5000/quote"); // update later for deployment
+    const response = await fetch("https://vitamin10-z5od.onrender.com"); 
     const data = await response.json();
     setQuote(data.quote);
   };
